@@ -1,5 +1,3 @@
-
-$('#watchListCount').text(JSON.parse(localStorage.getItem('watchList')).length);
 function getPage(page) {
     fetch(`https://rickandmortyapi.com/api/character?page=${page}`)
         .then(res => {
@@ -23,32 +21,31 @@ function getPage(page) {
                 $('.productPopup').css('display', 'flex');
                 $('.wrap').css('filter', 'blur(10px)');
             })
-
+            
         })
 }
 
-getPage(1);
 
 
-function getCharacterbyID(id) {
+function getCharacterbyID(id){
     fetch(`https://rickandmortyapi.com/api/character/${id}`)
-        .then(res => {
-            return res.json();
-        })
-        .then(data => {
-            $('.images').css(`background-image`, `url(${data.image})`);
-            $('.status').text(`Status: ${data.status}`);
-            $('#gendervalue').text(`${data.gender}`);
-            $('#namevalue').text(` ${data.origin.name}`);
-            $('#locnamevalue').text(` ${data.location.name}`);
-            $('#created').text(` ${data.created}`);
-            $('.name').text(` ${data.name}`);
+    .then(res => {
+        return res.json();
+    })
+    .then(data =>{
+        $('.images').css(`background-image`, `url(${data.image})`);
+        $('.status').text(`Status: ${data.status}`);
+        $('#gendervalue').text(`${data.gender}`);
+        $('#namevalue').text(` ${data.origin.name}`);
+        $('#locnamevalue').text(` ${data.location.name}`);
+        $('#created').text(` ${data.created}`);
+        $('.name').text(` ${data.name}`);
 
-            console.log(data);
-        })
-
+        console.log(data);
+    })
+    
 }
-let watchList = JSON.parse(localStorage.getItem('watchList')) || [];
+
 function getEpisode(page) {
     fetch(`https://rickandmortyapi.com/api/episode?page=${page}`)
         .then(res => {
@@ -99,6 +96,10 @@ function getEpisodeByID(id) {
 
 
 
+
+
+
+
 $('.exit').click(function () {
     $('.productPopup').css('display', 'none');
     $('.wrap').css('filter', 'blur(0)');
@@ -118,7 +119,7 @@ $('.epis').click(function () {
 
 
 let currentPage = 1;
-const totalPages = 42;
+const totalPages = 42; 
 
 getPage(currentPage);
 $('.pageNumber').text(currentPage);
@@ -126,7 +127,7 @@ $('.pageNumber').text(currentPage);
 $('#nextBtn').click(function () {
     currentPage++;
     if (currentPage > totalPages) {
-        currentPage = 1;
+        currentPage = 1; 
     }
     getPage(currentPage);
     $('.pageNumber').text(currentPage);
@@ -135,11 +136,12 @@ $('#nextBtn').click(function () {
 $('#prevBtn').click(function () {
     currentPage--;
     if (currentPage < 1) {
-        currentPage = totalPages;
+        currentPage = totalPages; 
     }
     getPage(currentPage);
     $('.pageNumber').text(currentPage);
 });
+
 
 let currentPageEpisode = 1;
 const totalPagesEpisode = 42;
@@ -164,3 +166,4 @@ $('#prevBtn').click(function () {
     getEpisode(currentPageEpisode);
     $('.pageNumber').text(currentPageEpisode);
 });
+
