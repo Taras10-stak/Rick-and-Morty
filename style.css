@@ -13,7 +13,7 @@
     align-items: center;
 }
 
-.header {
+.header{
     width: 100%;
     height: 80px;
     background-color: #ccc;
@@ -25,8 +25,11 @@
     cursor: pointer;
 }
 
-.character {
+.character{
     display: none;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 .characterContainer {
@@ -73,11 +76,9 @@
     border: none;
     border-radius: 5px;
 }
-
-.view {
+.view{
     margin: 5px 0 0 0;
 }
-
 .productPopup {
     width: 800px;
     height: 500px;
@@ -94,69 +95,59 @@
     border-radius: 20px;
     z-index: 1;
 }
-
-.exit {
+.exit{
     margin-top: 20px;
     margin-left: 730px;
 }
-
-.name {
+.name{
     margin: 30px 0 10px 0;
 }
-
-.surname {
+.surname{
     margin-bottom: 40px;
 }
-
-.infoblock {
+.infoblock{
     display: flex;
 }
-
-.images {
+.images{
     width: 300px;
     height: 300px;
     border-radius: 10px;
     background-color: #fff;
     margin: 0 30px 0 0;
 }
-
 .originname,
-.locationname {
+.locationname{
     margin: 0 0 0 20px;
 }
 
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 1px solid black;
 }
-
-.one {
+.one{
     border: 1px solid black;
 }
 
-.episodes {
-    display: flex;
+.episodes{
+    display: none;
     flex-direction: column;
     align-items: center;
     margin: 50px 50px;
 }
-
-.episname {
+.episname{
     font-size: 35px;
     color: rgb(1, 255, 14);
 }
-
-.episinfo {
+.episinfo{
     margin: 20px 0 0 0;
 }
-
-.episodes-search {
+.episodes-search{
     margin: 20px 0 20px 0;
     display: flex;
-
+    
 }
-
-.search-btn {
+.search-btn{
     width: 170px;
     height: 50px;
     border-radius: 5px;
@@ -165,8 +156,7 @@
     margin-left: 30px;
     background-color: rgb(0, 228, 11);
 }
-
-.search-form {
+.search-form{
     width: 250px;
     height: 50px;
     padding: 10px;
