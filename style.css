@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+.wrap {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.character {
+    display: none;
+}
+
+.characterContainer {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.charactersCard {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #ccc;
+    text-align: center;
+    font-size: 12px;
+}
+
+.charactersCard img {
+    width: 120px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.controlContainer {
+    display: flex;
+    align-items: center;
+}
+
+.controlContainer div {
+    margin: 10px;
+}
+
+.controlContainer button {
+    padding: 5px 10px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+}
+
+.view {
+    margin: 5px 0 0 0;
+}
+
+.productPopup {
+    width: 800px;
+    height: 500px;
+    background-color: rgb(66, 66, 66);
+    color: #fff;
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    left: 50%;
+    margin-left: -400px;
+    box-shadow: 0 5px 10px #ccc;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.exit {
+    margin-top: 20px;
+    margin-left: 730px;
+}
+
+.name {
+    margin: 30px 0 10px 0;
+}
+
+.surname {
+    margin-bottom: 40px;
+}
+
+.infoblock {
+    display: flex;
+}
+
+.images {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 0 30px 0 0;
+}
+
+.originname,
+.locationname {
+    margin: 0 0 0 20px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.one {
+    border: 1px solid black;
+}
+
+.episodes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 50px;
+}
+
+.episname {
+    font-size: 35px;
+    color: rgb(1, 255, 14);
+}
+
+.episinfo {
+    margin: 20px 0 0 0;
+}
+
+.episodes-search {
+    margin: 20px 0 20px 0;
+    display: flex;
+
+}
+
+.search-btn {
+    width: 170px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 30px;
+    background-color: rgb(0, 228, 11);
+}
+
+.search-form {
+    width: 250px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}

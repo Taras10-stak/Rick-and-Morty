@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricky Morty</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js'
+        integrity='sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=='
+        crossorigin='anonymous'></script>
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
+
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css'
+        integrity='sha512-KOWhIs2d8WrPgR4lTaFgxI35LLOp5PRki/DxQvb7mlP29YZ5iJ5v8tiLWF7JLk5nDBlgPP1gHzw96cZ77oD7zQ=='
+        crossorigin='anonymous' />
+</head>
+
+<body>
+    <div class="productPopup">
+        <div class="exit"><i class="fa-solid fa-xmark fa-xl" style="color: #ffffff;"></i></div>
+        <h1 class="name"></h1>
+        <h5 class="surname">Detailed info</h5>
+        <div class="infoblock">
+            <div class="images"></div>
+            <div class="info">
+                <p class="status"></p>
+                <p class="species"></p>
+                <p class="gender">Gender: <span id="gendervalue"></span></p>
+                <p class="categoryheader">Origin: </p>
+                <p class="originname">Name:<span id="namevalue"></span></p>
+                <p class="categoryheader">Location: </p>
+                <p class="locationname">Name:<span id="locnamevalue"></span></p>
+                <p class="created">Created:<span id="created"></span></p>
+            </div>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="header">
+            <div class="char">Characters</div>
+            <div class="epis">Episodes</div>
+            <div class="loca">Locations</div>
+            <div class="what">My watch list <span id="watchListCount">0</span></div>
+        </div>
+        <div class="character">
+            <div class="characterContainer"></div>
+            <div class="controlContainer">
+                <button id="prevBtn">-</button>
+                <div class="pageNumber">1</div>
+                <button id="nextBtn">+</button>
+            </div>
+        </div>
+        <div class="episodes">
+            <h2 class="episname">Episodes</h2>
+            <p class="episinfo">All information about each episode are here. Enter your query on filters or view all. Click on card to get full info about the episode</p>
+            <div class="episodes-search">
+                <input class="search-form" type="text" placeholder="Enter the name">
+                <button class="search-btn">SEARCH       <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #000000;"></i></button>
+            </div>
+            <div class="wrapper">
+                
+              
+            </div>
+            <div class="controlContainer">
+                <button id="prevBtn">-</button>
+                <div class="pageNumber">1</div>
+                <button id="nextBtn">+</button>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
